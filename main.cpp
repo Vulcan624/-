@@ -253,8 +253,7 @@ vector<LogEvent> loadLogs(const string& filename) {
             pos5 == string::npos) {
             continue;
         }
-        
-        // Разбираем строку вручную
+    
         string yearStr = line.substr(0, pos1);
         string monthStr = line.substr(pos1 + 1, pos2 - pos1 - 1);
         string dayStr = line.substr(pos2 + 1, pos3 - pos2 - 1);
